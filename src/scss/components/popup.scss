@@ -1,0 +1,111 @@
+.popup {
+  $popupGap: 36rem;
+  $popupGapMd: 20rem;
+  background: rgba($blackColor, .5);
+  padding: var(--gap);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .4s ease-in-out;
+  transition-property: visibility, opacity;
+  overflow-y: auto;
+  z-index: 2000;
+  &:not(.is-open) {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    .popup__content {
+      transform: translateY(-20vh);
+      opacity: 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+  }
+  &__content {
+    background: $orange3Color;
+    width: 100%;
+    max-width: 480rem;
+    margin: 0 auto;
+    padding: $popupGap;
+    color: $blackColor;
+    border: 2rem solid currentColor;
+    border-radius: $radiusMd;
+    box-shadow: $shadowBlack1;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: $sm) {
+      padding: 3 * $popupGapMd $popupGapMd $popupGapMd;
+    }
+    &--size {
+      &-md {
+        max-width: 928rem;
+      }
+    }
+    &--theme {
+      &-orange {
+        background: $orange3Color;
+        border-color: $blackColor;
+      }
+      &-green {
+        background: $lightGreenColor;
+        border-color: $blackColor;
+      }
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+  }
+  &__resut {
+    &-title {
+      @extend .title-size-2;
+      margin: 0 0 20rem;
+      text-transform: uppercase;
+      text-align: center;
+      @media (max-width: $sm) {
+        margin-bottom: 10rem;
+      }
+    }
+    &-text {
+      margin: 0 0 44rem;
+      text-align: center;
+    }
+    &-win-hero {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &-jackpot-pattern {
+      background: url(../images/pattern-diamond-1.svg) 0 0 repeat-x;
+      background-size: auto 100%;
+      margin: 0 -1 * $popupGap 20rem;
+      height: 106px;
+      animation: 1.4s jackpot-pattern-infinite linear infinite;
+      @media (max-width: $sm) {
+        height: 70rem;
+      }
+    }
+    &-jackpot-hero {
+      margin: 0 -1 * $popupGap -1 * $popupGap;
+      img {
+        width: 100%;
+        max-width: 386rem;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        @media (max-width: $xs) {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+}

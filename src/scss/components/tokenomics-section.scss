@@ -1,0 +1,135 @@
+.tokenomics-section {
+  background: url(../images/tokenomics-section-bg.jpg) 50% / cover no-repeat;
+  position: relative;
+  @media (max-width: $md) {
+    background-position: calc(50% - 215rem) 50%;
+  }
+  &__el {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    &--1 {
+      width: 164rem;
+      height: 176rem;
+      margin: 30rem -4rem 0 0;
+      top: 100%;
+      right: 100%;
+      z-index: -1;
+    }
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 60rem;
+    color: $darkGreenColor;
+    @media (max-width: $md) {
+      margin-bottom: 44rem;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 30rem;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $sm) {
+      flex-wrap: wrap;
+    }
+    &-content {
+      max-width: 44%;
+      flex: 0 0 44%;
+      position: relative;
+      z-index: 0;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-arrow {
+      width: 102rem;
+      height: 64rem;
+      margin: 0 auto;
+      flex-shrink: 0;
+      position: relative;
+      left: 6rem;
+      @media (max-width: $sm) {
+        width: 60rem;
+        height: 44rem;
+        margin: -36rem auto 22rem -4rem;
+        order: -1;
+      }
+      .u-icon {
+        width: 100%;
+        height: 100%;
+        @media (max-width: $sm) {
+          transform: rotate(-30deg);
+        }
+      }
+    }
+    &-graph {
+      max-width: 41%;
+      flex: 0 0 41%;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin: 0 auto;
+        flex-basis: 100%;
+        order: -2;
+      }
+    }
+  }
+  &__content {
+    @media (max-width: $lg) {
+      padding-bottom: 9rem;
+      font-size: 16rem;
+    }
+  }
+  &__graph {
+    position: relative;
+    z-index: 0;
+    @media (max-width: $sm) {
+      max-width: 260rem;
+      margin: 0 auto;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      border-radius: 50%;
+      box-shadow: $shadowBlack1;
+      z-index: -1;
+    }
+    &-el {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 50%;
+    }
+    &-hero {
+      background: $lightGreenColor;
+      width: 214rem;
+      height: 214rem;
+      box-shadow: 0 0 0 2rem $blackColor;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      overflow: hidden;
+      @media (max-width: $sm) {
+        width: 138rem;
+        height: 138rem;
+        box-shadow: 0 0 0 1rem $blackColor;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

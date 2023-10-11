@@ -1,0 +1,94 @@
+$siteResolution: 1px;
+$mainFont: 'Inter';
+$accentFont: 'Rimma_sans';
+$mainWeight: 400;
+$lineHeightMedium: 1.3;
+$lineHeightTitle: 1.22;
+$lineHeightDefault: $lineHeightMedium;
+
+$containerWidth: 1240rem;
+
+$radiusSm: 5rem;
+$radiusMd: 10rem;
+$radiusLg: 20rem;
+
+$headerGap: 25rem;
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$green1Color: #2fa12c;
+$orange2Color: #f89422;
+$orange3Color: #ffb413;
+$lightGreenColor: #c3f5d0;
+$mediumGreenColor: #9fcd8f;
+$brownColor: #7D5500;
+$paleGreenColor: #d4fac7;
+$purpleBlueColor: #c6b9ff;
+$darkGreenColor: #153a1e;
+$darkPurpleColor: #3e1253;
+$pinkColor: #ffb3b9;
+$darkPurple2Color: #653391;
+$darkPurple3Color: #6a3b9b;
+$grayColor: #1f1f1f;
+$gray1Color: #aeaeae;
+$paleGreen2Color: #9affb5;
+$paleGreen3Color: #91dfa5;
+$darkBluePurpleColor: #372c66;
+$darkRedColor: #ad3741;
+$darkGrayColor: #2e2e2e;
+$paleGreen4Color: #e5ffec;
+
+$fontFamily: $mainFont, sans-serif;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+$accentColor: $green1Color;
+
+$shadowWhite1: 4rem 4rem 1rem 0 $whiteColor;
+$shadowBlack1: 10rem 10rem 1rem 0 $blackColor;
+
+$transition: all .4s 0ms;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs;
+
+:root {
+  --fs-default: 18rem;
+  --fs-1: 120rem;
+  --fs-2: 100rem;
+  --fs-3: 72rem;
+  --fs-4: 50rem;
+  --fs-5: 30rem;
+  --fs-6: 24rem;
+  --offset: 15rem;
+  --offset-: -15rem;
+  --gap: 20rem;
+  --gap-: -20rem;
+  @media (max-width: $lg) {
+    --fs-1: 10vw;
+    --fs-3: 58rem;
+  }
+  @media (max-width: $md) {
+    --fs-default: 14rem;
+    --fs-2: 48rem;
+    --fs-3: 42rem;
+    --fs-4: 34rem;
+    --fs-5: 24rem;
+    --fs-6: 22rem;
+  }
+  @media (max-width: $sm) {
+    --fs-2: 36rem;
+    --fs-3: 32rem;
+    --fs-4: 28rem;
+    --fs-5: 22rem;
+    --fs-6: 20rem;
+  }
+}

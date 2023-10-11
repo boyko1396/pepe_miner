@@ -1,0 +1,116 @@
+.roadmap-section {
+  background: url(../images/roadmap-section-bg.jpg) 50% / cover no-repeat;
+  position: relative;
+  &__el {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    @media (max-width: $lg) {
+      display: none;
+    }
+    &--1 {
+      width: 173rem;
+      top: 150rem;
+      left: 0;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &--2 {
+      width: 216rem;
+      height: 200rem;
+      margin: 0 0 0 54rem;
+      top: 160rem;
+      left: 100%;
+      z-index: -1;
+    }
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 22rem;
+    color: $darkPurpleColor;
+    @media (max-width: $md) {
+      margin-bottom: -20rem;
+    }
+  }
+  &__main {
+    position: relative;
+    z-index: 0;
+  }
+  &__list {
+    counter-reset: roadmapCounter;
+    &-col {
+      counter-increment: roadmapCounter;
+      position: relative;
+      z-index: 0;
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      &:nth-child(1) {
+        .roadmap-section__list-counter {
+          &:before,
+          &:after {
+            color: $pinkColor;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .roadmap-section__list-counter {
+          &:before,
+          &:after {
+            color: $orange2Color;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .roadmap-section__list-counter {
+          &:before,
+          &:after {
+            color: $green1Color;
+          }
+        }
+      }
+    }
+    &-counter {
+      height: 1em;
+      margin: 0 0 -.32em 8rem;
+      display: block;
+      font-weight: bold;
+      font-size: 210rem;
+      line-height: 1;
+      font-family: $accentFont;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $blackColor;
+      position: relative;
+      @media (max-width: $lg) {
+        font-size: 160rem;
+      }
+      @media (max-width: $sm) {
+        font-size: 100rem;
+      }
+      &:before,
+      &:after {
+        height: 100%;
+        width: 100%;
+        content: counter(roadmapCounter);
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+      }
+      &:before {
+        text-shadow: 10rem 10rem 1rem rgba($blackColor, 1), 2rem 2rem 1rem rgba($blackColor, .25);
+        z-index: -1;
+      }
+      &:after {
+        z-index: 1;
+      }
+    }
+    &-card {
+    }
+  }
+}

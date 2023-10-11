@@ -1,0 +1,46 @@
+.sortable {
+  thead {
+    th {
+      &:not(.no-sort) {
+        cursor: pointer;
+        .sortable__carret {
+          display: inline-flex;
+          flex-direction: column;
+          line-height: .5;
+          align-items: center;
+          position: relative;
+          top: -4rem;
+          &:after,
+          &:before {
+            transition: color 0.1s ease-in-out;
+            font-size: 1.2em;
+            color: $mediumGreenColor;
+          }
+          &:before {
+            margin-left: 3px;
+            content: '\025B4';
+          }
+          &:after {
+            margin-left: 3px;
+            content: '\025BE';
+          }
+        }
+        &:hover {
+          .sortable__carret:after {
+            color: inherit;
+          }
+        }
+        &.dir-d {
+          .sortable__carret:after {
+            color: $whiteColor;
+          }
+        }
+        &.dir-u {
+          .sortable__carret:before {
+            color: $whiteColor;
+          }
+        }
+      }
+    }
+  }
+}

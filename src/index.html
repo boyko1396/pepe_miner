@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    'title': 'PepeMiner'
+  })
+  <body>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <div data-observ class="c-header-sticky-point"></div>
+          <!-- miner-section BEGIN -->
+          <section id="miner-section" class="miner-section">
+            <svg class="u-icon miner-section__diamond miner-section__diamond--1">
+              <use xlink:href="images/icons/icons.svg#diamond-1"></use>
+            </svg>
+            <svg class="u-icon miner-section__diamond miner-section__diamond--2">
+              <use xlink:href="images/icons/icons.svg#diamond-2"></use>
+            </svg>
+            <svg class="u-icon miner-section__diamond miner-section__diamond--3">
+              <use xlink:href="images/icons/icons.svg#diamond-3"></use>
+            </svg>
+            <svg class="u-icon miner-section__diamond miner-section__diamond--4">
+              <use xlink:href="images/icons/icons.svg#diamond-4"></use>
+            </svg>
+            <svg class="u-icon miner-section__diamond miner-section__diamond--5">
+              <use xlink:href="images/icons/icons.svg#diamond-5"></use>
+            </svg>
+            <picture class="miner-section__bg">
+               <source media="(max-width: 767px)" srcset="images/miner-section-bg-mobile.svg">
+              <img src="images/miner-section-bg.svg" alt="Pepe miner">
+            </picture>
+            <div class="container miner-section__container">
+              <h1 class="miner-section__title">Pepe <picture><img src="images/hero-1.png" alt="Pepe miner"></picture> miner</h1>
+              <h2 class="miner-section__subtitle"><span data-modal="popup-win">Lorem</span> <span data-modal="popup-jackpot">ipsum</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+              <a href="#" class="btn btn--theme-accent btn--size-md miner-section__btn">
+                <span class="btn__inner">
+                  <span class="btn__title">Buy</span>
+                </span>
+              </a>
+              <picture class="miner-section__hero miner-section__hero--1">
+                <img src="images/hero-gif-2.gif">
+              </picture>
+              <picture class="miner-section__hero miner-section__hero--2">
+                <img src="images/hero-5.png">
+              </picture>
+            </div>
+          </section>
+          <!-- miner-section END -->
+          <!-- about-section BEGIN -->
+          <section id="about-section" class="section about-section">
+            <div class="container about-section__container">
+              <picture class="about-section__el about-section__el--1">
+                <img src="images/hero-6.png">
+              </picture>
+              <div class="about-section__table-wrapper">
+                <svg class="u-icon about-section__el about-section__el--2">
+                  <use xlink:href="images/icons/icons.svg#el-1"></use>
+                </svg>
+                <div class="u-box u-box--theme-accent u-box--size-md table-sort about-section__table">
+                  <table class="sortable table-sort__el">
+                    <thead>
+                      <tr>
+                        <th>Data <span class="sortable__carret"></span></th>
+                        <th>Type <span class="sortable__carret"></span></th>
+                        <th>Price USD <span class="sortable__carret"></span></th>
+                        <th>Total <span class="sortable__carret"></span></th>
+                        <th>Price ETH <span class="sortable__carret"></span></th>
+                        <th>Quantity <span class="sortable__carret"></span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>12.09.2023 15:44:12</td>
+                        <td>Buy</td>
+                        <td>$0.0054</td>
+                        <td>$30,34</td>
+                        <td>0.0000009123</td>
+                        <td>105,435</td>
+                      </tr>
+                      <tr>
+                        <td>12.09.2023 15:44:12</td>
+                        <td>Buy</td>
+                        <td>$0.0054</td>
+                        <td>$30,34</td>
+                        <td>0.0000009123</td>
+                        <td>105,435</td>
+                      </tr>
+                      <tr>
+                        <td>12.09.2023 15:44:12</td>
+                        <td>Buy</td>
+                        <td>$0.0054</td>
+                        <td>$30,34</td>
+                        <td>0.0000009123</td>
+                        <td>105,435</td>
+                      </tr>
+                      <tr>
+                        <td>12.09.2023 15:44:12</td>
+                        <td>Buy</td>
+                        <td>$0.0054</td>
+                        <td>$30,34</td>
+                        <td>0.0000009123</td>
+                        <td>105,435</td>
+                      </tr>
+                      <tr>
+                        <td>12.09.2023 15:44:12</td>
+                        <td>Buy</td>
+                        <td>$0.0054</td>
+                        <td>$30,34</td>
+                        <td>0.0000009123</td>
+                        <td>105,435</td>
+                      </tr>
+                      <tr>
+                        <td>12.09.2023 15:44:12</td>
+                        <td>Buy</td>
+                        <td>$0.0054</td>
+                        <td>$30,34</td>
+                        <td>0.0000009123</td>
+                        <td>105,435</td>
+                      </tr>
+                      <tr>
+                        <td>12.09.2023 15:44:12</td>
+                        <td>Buy</td>
+                        <td>$0.0054</td>
+                        <td>$30,34</td>
+                        <td>0.0000009123</td>
+                        <td>105,435</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="about-section__main">
+                <svg class="u-icon about-section__el about-section__el--3">
+                  <use xlink:href="images/icons/icons.svg#el-2"></use>
+                </svg>
+                <svg class="u-icon about-section__el about-section__el--4">
+                  <use xlink:href="images/icons/icons.svg#el-3"></use>
+                </svg>
+                <h2 class="section-title about-section__title">About</h2>
+                <div class="row about-section__row">
+                  <div class="row__col row__col--6 about-section__col about-section__col--content">
+                    <div class="u-box u-box--theme-purple u-box--size-md about-section__card">
+                      <div class="content u-box__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row__col row__col--6 about-section__col about-section__col--media">
+                    <div class="u-box u-box--theme-accent u-box--size-md about-section__card">
+                      <div class="media-responsive u-box__media">
+                        <div class="media-responsive__el">
+                          <video poster="images/poster-video-1.jpg" class="js-video-el">
+                            <source src="static/video/about-video.mp4" type="video/mp4">
+                            <source src="static/video/about-video.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <button type="button" class="js-video-btn-play media-responsive__btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-section__appeal">
+                  <h3 class="u-box u-box--theme-white u-box--size-md about-section__appeal-title">Watch how it&nbsp;works</h3>
+                  <svg class="u-icon about-section__el about-section__el--5">
+                    <use xlink:href="images/icons/icons.svg#el-4"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about-section END -->
+          <!-- roadmap-section BEGIN -->
+          <section id="roadmap-section" class="section roadmap-section">
+            <picture class="roadmap-section__el roadmap-section__el--1">
+              <img src="images/hero-8.png">
+            </picture>
+            <div class="container roadmap-section__container">
+              <h2 class="section-title roadmap-section__title">Roadmap</h2>
+              <div class="roadmap-section__main">
+                <svg class="u-icon roadmap-section__el roadmap-section__el--2">
+                  <use xlink:href="images/icons/icons.svg#el-5"></use>
+                </svg>
+                <div class="row roadmap-section__list">
+                  <div class="row__col row__col--4 roadmap-section__list-col">
+                    <div class="roadmap-section__list-counter"></div>
+                    <article class="u-box u-box--size-md u-box--theme-accentlight roadmap-card roadmap-section__list-card">
+                      <div class="roadmap-card__inner">
+                        <h3 class="roadmap-card__title">Phase 1</h3>
+                        <ul class="list-text roadmap-card__list-text">
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col row__col--4 roadmap-section__list-col">
+                    <div class="roadmap-section__list-counter"></div>
+                    <article class="u-box u-box--size-md u-box--theme-pink roadmap-card roadmap-section__list-card">
+                      <div class="roadmap-card__inner">
+                        <h3 class="roadmap-card__title">Phase 2</h3>
+                        <ul class="list-text roadmap-card__list-text">
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col row__col--4 roadmap-section__list-col">
+                    <div class="roadmap-section__list-counter"></div>
+                    <article class="u-box u-box--size-md u-box--theme-white roadmap-card roadmap-section__list-card">
+                      <div class="roadmap-card__inner">
+                        <h3 class="roadmap-card__title">Phase 3</h3>
+                        <ul class="list-text roadmap-card__list-text">
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- roadmap-section END -->
+          <!-- tokenomics-section BEGIN -->
+          <section id="tokenomics-section" class="section tokenomics-section">
+            <div class="container tokenomics-section__container">
+              <h2 class="section-title tokenomics-section__title">Tokenomics</h2>
+              <div class="tokenomics-section__row">
+                <div class="tokenomics-section__row-content">
+                  <svg class="u-icon tokenomics-section__el tokenomics-section__el--1">
+                    <use xlink:href="images/icons/icons.svg#el-6"></use>
+                  </svg>
+                  <div class="u-box u-box--theme-white u-box--size-md tokenomics-section__content">
+                    <div class="u-box__graph-list">
+                      <div class="u-box__graph-list-item">
+                        <div class="u-box__graph-list-item-square" style="background-color: #f89422;"></div>
+                        <div class="u-box__graph-list-item-title">Marketing</div>
+                        <div class="u-box__graph-list-item-percent">4%</div>
+                      </div>
+                      <div class="u-box__graph-list-item">
+                        <div class="u-box__graph-list-item-square" style="background-color: #2fa12c;"></div>
+                        <div class="u-box__graph-list-item-title">Liqudity</div>
+                        <div class="u-box__graph-list-item-percent">36%</div>
+                      </div>
+                      <div class="u-box__graph-list-item">
+                        <div class="u-box__graph-list-item-square" style="background-color: #ffb3b9;"></div>
+                        <div class="u-box__graph-list-item-title">Presale</div>
+                        <div class="u-box__graph-list-item-percent">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tokenomics-section__row-arrow">
+                  <svg class="u-icon">
+                    <use xlink:href="images/icons/icons.svg#el-7"></use>
+                  </svg>
+                </div>
+                <div class="tokenomics-section__row-graph">
+                  <div class="tokenomics-section__graph">
+                    <svg width="488" height="488" viewBox="0 0 488 488" fill="none" xmlns="http://www.w3.org/2000/svg" class="tokenomics-section__graph-el"><path class="tokenomics-graph-sector-1" d="M244 2.64961e-07C197.592 -2.8845e-07 152.146 13.2348 112.995 38.1516C73.8429 63.0685 42.6089 98.634 22.9569 140.676C3.30497 182.718 -3.94989 229.492 2.04345 275.511C8.0368 321.531 27.0298 364.887 56.7942 400.493C86.5586 436.099 125.86 462.478 170.088 476.536C214.315 490.594 261.635 491.747 306.495 479.861C351.355 467.975 391.895 443.542 423.359 409.428C454.823 375.315 475.906 332.936 484.134 287.263L244 244V2.64961e-07Z" fill="#FFB3B9"/><path class="tokenomics-graph-sector-2" fill-rule="evenodd" clip-rule="evenodd" d="M242.003 245.672V2.00824C196.668 2.38225 152.335 15.4841 114.066 39.8396C75.2345 64.5525 44.2565 99.8267 24.7657 141.524C5.275 183.221 -1.92028 229.611 4.02386 275.253C9.96801 320.894 28.8051 363.895 58.3256 399.209C87.8462 434.523 126.826 460.687 170.692 474.63C214.558 488.573 261.491 489.717 305.984 477.928C350.477 466.138 390.685 441.905 421.892 408.071C452.645 374.727 473.399 333.422 481.806 288.875L242.003 245.672ZM484.129 287.262L484.134 287.263C484.134 287.265 484.133 287.266 484.133 287.268C484.015 287.923 483.895 288.576 483.771 289.23C475.298 334.152 454.371 375.805 423.359 409.428C391.895 443.542 351.355 467.975 306.495 479.861C261.635 491.747 214.315 490.594 170.088 476.536C125.86 462.478 86.5586 436.099 56.7942 400.493C27.0298 364.887 8.0368 321.531 2.04345 275.511C-3.94989 229.492 3.30497 182.718 22.9569 140.676C42.6089 98.634 73.8429 63.0685 112.995 38.1516C151.585 13.5923 196.289 0.382229 242.003 0.00817105C242.668 0.00272539 243.334 2.64961e-07 244 2.64961e-07V244L484.129 287.262Z" fill="black"/><path class="tokenomics-graph-sector-3" d="M112.166 38.4819C91.4131 51.763 72.7914 68.1107 56.9346 86.9689L243.689 244L112.166 38.4819Z" fill="#F89422"/><path class="tokenomics-graph-sector-4" fill-rule="evenodd" clip-rule="evenodd" d="M58.2273 85.4443C57.7944 85.9507 57.3635 86.4589 56.9346 86.969L243.689 244L112.166 38.482C112.166 38.4819 112.166 38.482 112.166 38.482C111.99 38.5943 111.815 38.707 111.64 38.8198C111.255 39.0674 110.871 39.3161 110.488 39.5658C90.9664 52.2851 73.3675 67.7348 58.2273 85.4443ZM59.7569 86.7305L234.935 234.028L111.565 41.2497C92.2137 53.86 74.7673 69.1757 59.7569 86.7305Z" fill="black"/><path class="tokenomics-graph-sector-5" d="M107.997 41.4185C148.064 14.5197 195.208 0.106172 243.466 0.000584297C291.725 -0.105003 338.931 14.1021 379.115 40.8253C419.299 67.5485 450.656 105.588 469.222 150.132C487.787 194.677 492.726 243.726 483.415 291.078L244 244L107.997 41.4185Z" fill="#2FA12C"/><path class="tokenomics-graph-sector-6" fill-rule="evenodd" clip-rule="evenodd" d="M107.998 41.4192L244 244L483.415 291.078C483.433 290.986 483.451 290.894 483.469 290.802C483.579 290.24 483.687 289.677 483.793 289.114C492.587 242.372 487.53 194.061 469.222 150.132C450.656 105.588 419.299 67.5485 379.115 40.8253C338.931 14.1021 291.725 -0.105003 243.466 0.000584297C195.874 0.104714 149.366 14.1245 109.661 40.3116C109.105 40.6782 108.551 41.0478 107.998 41.4192ZM110.775 41.9714L245.196 242.197L481.833 288.729C490.551 242.375 485.535 194.467 467.379 150.903C448.966 106.723 417.865 68.9959 378.01 42.4914C338.155 15.9869 291.335 1.89585 243.47 2.00058C196.273 2.10384 150.152 16.0053 110.775 41.9714Z" fill="black"/></svg>
+                    <picture class="tokenomics-section__graph-hero">
+                      <img src="images/hero-3.png">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- tokenomics-section END -->
+          <!-- info-section BEGIN -->
+          <section class="section info-section">
+            <div class="container info-section__container">
+              <h2 class="section-title info-section__title">Lorem ipsum</h2>
+              <div class="row info-section__row">
+                <div class="row__col row__col--6 info-section__col info-section__col--media">
+                  <div class="u-box u-box--theme-accentlight u-box--size-md info-section__card">
+                    <picture class="u-box__picture">
+                      <img src="images/hero-gif-1.gif">
+                    </picture>
+                  </div>
+                </div>
+                <div class="row__col row__col--6 info-section__col info-section__col--content">
+                  <div class="u-box u-box--theme-purple u-box--size-md info-section__card">
+                    <div class="content u-box__content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- info-section END -->
+          <!-- certificates-section BEGIN -->
+          <section id="certificates-section" class="section certificates-section">
+            <div class="container certificates-section__container">
+              <h2 class="section-title certificates-section__title">Certificates</h2>
+              <div class="content certificates-section__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+              <div class="row certificates-section__row">
+                <div class="row__col row__col--3 certificates-section__col">
+                  <div class="u-box u-box--theme-purple u-box--size-md certificates-section__card">
+                    <div class="u-box__certificates">
+                      <h3 class="color-purple u-box__certificates-title">Safu</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col row__col--3 certificates-section__col">
+                  <div class="u-box u-box--theme-pink u-box--size-md certificates-section__card">
+                    <div class="u-box__certificates">
+                      <h3 class="color-reddark u-box__certificates-title">Audit</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col row__col--3 certificates-section__col">
+                  <div class="u-box u-box--theme-white u-box--size-md certificates-section__card">
+                    <div class="u-box__certificates">
+                      <h3 class="color-graydark u-box__certificates-title">Kys</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col row__col--3 certificates-section__col">
+                  <div class="u-box u-box--theme-accent u-box--size-md certificates-section__card">
+                    <div class="u-box__certificates">
+                      <h3 class="color-palegreen u-box__certificates-title">Doxx</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <picture class="certificates-section__hero">
+                <img src="images/hero-4.png" alt="certificates">
+              </picture>
+            </div>
+          </section>
+          <!-- certificates-section END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

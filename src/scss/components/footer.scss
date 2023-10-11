@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  @media (max-width: $md) {
+    background: $accentColor;
+    padding: 36rem 0 30rem;
+    position: relative;
+  }
+  &__container {
+  }
+  &__inner {
+    background: $accentColor;
+    padding: 12rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $whiteColor;
+    border-radius: 5rem 5rem 0 0;
+    @media (max-width: $md) {
+      background: transparent;
+      padding: 0;
+      flex-direction: column;
+    }
+  }
+  &__nav {
+    margin-right: 32rem;
+    @media (max-width: $md) {
+      margin: 0 0 30rem;
+      font-size: 18rem;
+    }
+    .header-nav__item {
+      &:not(:last-child) {
+        @media (max-width: $md) {
+          margin-bottom: 10rem;
+        }
+      }
+    }
+  }
+  &__sc {
+  }
+}
