@@ -5,13 +5,6 @@
   left: 0;
   z-index: 998;
   &.is-sticky {
-    // .header__nav-link {
-    // }
-    .header__dropdown {
-      @media (min-width: $md-mf) {
-        box-shadow: 0 0 0 2rem $blackColor;
-      }
-    }
     .header__dropdown-btn {
       @media (min-width: $md-mf) {
         margin: 0 $headerGap 0 2 * $headerGap;
@@ -35,6 +28,7 @@
     padding: 0 $headerGap;
     color: $whiteColor;
     border-radius: 0 0 5rem 5rem;
+    box-shadow: 0 0 0 2rem $blackColor;
     transition: $transition;
     transition-property: box-shadow, opacity, visibility, transform;
     @media (max-width: $md) {

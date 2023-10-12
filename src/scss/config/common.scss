@@ -41,13 +41,20 @@
       &:hover {
         background: $orange2Color;
       }
+      &:focus,
+      &:active {
+        box-shadow: 0 0 0 0 $whiteColor;
+        transform: translate(6rem, 6rem);
+      }
     }
     &-orange {
       background: $orange2Color;
       color: $whiteColor;
       border-radius: $radiusSm;
       box-shadow: $shadowWhite1;
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         background: $orange3Color;
       }
     }
@@ -519,9 +526,13 @@
 }
 
 a.u-box:hover,
-button.u-box:hover {
+a.u-box:active,
+a.u-box:focus,
+button.u-box:hover,
+button.u-box:active,
+button.u-box:focus {
   text-decoration: none;
-  box-shadow: 0 0 1rem 0 $blackColor;
+  box-shadow: 0 0 0 0 rgba($blackColor, 1);
   cursor: pointer;
   transform: translate(6rem, 6rem);
 }
