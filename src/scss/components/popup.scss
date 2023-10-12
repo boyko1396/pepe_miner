@@ -78,8 +78,7 @@
       text-align: center;
     }
     &-win-hero {
-      background: url(../images/result-hero-1.png) center bottom no-repeat;
-      background-size: contain;
+      background: url(../images/result-hero-1.png) center bottom / contain no-repeat;
       img {
         width: 100%;
         max-width: 64%;
@@ -89,8 +88,7 @@
       }
     }
     &-jackpot-pattern {
-      background: url(../images/pattern-diamond-1.svg) 0 0 repeat-x;
-      background-size: auto 100%;
+      background: url(../images/pattern-diamond-1.svg) 0 0 / auto 100% repeat-x;
       margin: 0 -1 * $popupGap 20rem;
       height: 106px;
       animation: .6s jackpot-pattern-infinite linear infinite;

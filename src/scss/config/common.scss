@@ -338,8 +338,7 @@
       margin-bottom: 16rem;
     }
     &:before {
-      background: url(../images/hero-2.png) 0 0 no-repeat;
-      background-size: contain;
+      background: url(../images/hero-2.png) 0 0 / contain no-repeat;
       width: 33rem;
       height: 25rem;
       content: '';
@@ -470,13 +469,20 @@
         border-radius: 3rem;
       }
       &-title {
+        max-width: calc(100% - 60rem);
         margin: 0 10rem;
+        white-space: nowrap;
+        strong {
+          word-break: break-all;
+          white-space: initial;
+        }
       }
       &-percent {
+        max-width: calc(100% - 64rem);
         margin-left: auto;
         font-weight: bold;
         flex-shrink: 0;
-        white-space: nowrap;
+        text-align: right;
       }
     }
   }
