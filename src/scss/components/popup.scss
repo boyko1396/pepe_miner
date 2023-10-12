@@ -40,7 +40,7 @@
     position: relative;
     overflow: hidden;
     @media (max-width: $sm) {
-      padding: 3 * $popupGapMd $popupGapMd $popupGapMd;
+      padding: 2 * $popupGapMd $popupGapMd $popupGapMd;
     }
     &--size {
       &-md {
@@ -70,7 +70,7 @@
       text-transform: uppercase;
       text-align: center;
       @media (max-width: $sm) {
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
       }
     }
     &-text {
@@ -78,9 +78,13 @@
       text-align: center;
     }
     &-win-hero {
+      background: url(../images/result-hero-1.png) center bottom no-repeat;
+      background-size: contain;
       img {
         width: 100%;
+        max-width: 64%;
         height: auto;
+        margin: 0 auto -18rem;
         display: block;
       }
     }
@@ -89,7 +93,7 @@
       background-size: auto 100%;
       margin: 0 -1 * $popupGap 20rem;
       height: 106px;
-      animation: 1.4s jackpot-pattern-infinite linear infinite;
+      animation: .6s jackpot-pattern-infinite linear infinite;
       @media (max-width: $sm) {
         height: 70rem;
       }

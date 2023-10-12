@@ -1,8 +1,9 @@
 .header {
-  width: 100%;
   position: fixed;
   top: 0;
+  right: 0;
   left: 0;
+  overflow: hidden;
   z-index: 998;
   &.is-sticky {
     // .header__nav-link {
@@ -158,6 +159,14 @@
           opacity: 0;
         }
       }
+    }
+  }
+}
+
+body.is-lock {
+  @media (min-width: $lg-mf) {
+    .header {
+      right: 17rem;
     }
   }
 }

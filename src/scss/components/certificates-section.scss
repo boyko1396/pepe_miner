@@ -1,6 +1,6 @@
 .certificates-section {
   background: url(../images/certificates-section-bg.jpg) 50% / cover no-repeat;
-  padding-bottom: 40rem;
+  padding-bottom: 40rem !important;
   &__container {
   }
   &__title {
@@ -29,7 +29,8 @@
     }
   }
   &__row {
-    margin-bottom: 150rem;
+    margin-bottom: 180rem;
+    justify-content: center;
     @media (max-width: $md) {
       margin-bottom: 40rem;
     }

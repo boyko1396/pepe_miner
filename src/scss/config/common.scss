@@ -15,6 +15,7 @@
   font-family: $accentFont;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: .05em;
   border: none;
   border-radius: 0;
   outline: none;
@@ -38,9 +39,7 @@
       border-radius: $radiusSm;
       box-shadow: $shadowWhite1;
       &:hover {
-        @media (min-width: $lg-mf) {
-          background: $orange2Color;
-        }
+        background: $orange2Color;
       }
     }
     &-orange {
@@ -49,8 +48,7 @@
       border-radius: $radiusSm;
       box-shadow: $shadowWhite1;
       &:hover {
-        @media (min-width: $lg-mf) {
-        }
+        background: $orange3Color;
       }
     }
   }
@@ -59,7 +57,7 @@
       --btn-height: 46rem;
       --btn-padding-x: 30rem;
       --btn-padding-y: 8rem;
-      --btn-font-size: 18rem;
+      --btn-font-size: var(--fs-6);
     }
     &-md {
       --btn-height: 70rem;
@@ -363,6 +361,9 @@
   cursor: pointer;
   border-radius: $radiusSm;
   transition: $transition;
+  @media (max-width: $sm) {
+    padding: 5rem;
+  }
   &:hover {
     text-decoration: none;
   }
@@ -380,6 +381,10 @@
     width: 26rem;
     height: 26rem;
     display: block;
+    @media (max-width: $sm) {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 }
 
@@ -389,6 +394,8 @@
   color: $blackColor;
   border: 2rem solid currentColor;
   box-shadow: $shadowBlack1;
+  position: relative;
+  transition: $transition;
   &--theme {
     &-accent {
       background: $accentColor;
@@ -452,7 +459,9 @@
       padding: 13rem 0;
       display: flex;
       align-items: center;
-      border-bottom: 1px solid $gray1Color;
+      &:not(:last-child) {
+        border-bottom: 1px solid $gray1Color;
+      }
       &-square {
         width: 26rem;
         height: 26rem;
@@ -486,7 +495,13 @@
     }
   }
   &__certificates {
-    padding: 34rem 10rem 44rem;
+    padding: 36rem 10rem 42rem;
+    @media (max-width: $md) {
+      padding: 28rem 5rem 34rem;
+    }
+    @media (max-width: $sm) {
+      padding: 18rem 5rem 25rem;
+    }
     &-title {
       margin: 0;
       font-size: var(--fs-4);
@@ -495,6 +510,14 @@
       text-transform: uppercase;
     }
   }
+}
+
+a.u-box:hover,
+button.u-box:hover {
+  text-decoration: none;
+  box-shadow: 0 0 1rem 0 $blackColor;
+  cursor: pointer;
+  transform: translate(6rem, 6rem);
 }
 
 .roadmap-card {
