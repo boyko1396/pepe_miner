@@ -58,6 +58,16 @@
         background: $orange3Color;
       }
     }
+    &-white {
+      background: $whiteColor;
+      color: $accentColor;
+      border-radius: $radiusSm;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $orange3Color;
+      }
+    }
   }
   &--size {
     &-sm {
